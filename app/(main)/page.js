@@ -1,5 +1,6 @@
 "use client";
 
+import SearchInput from "@/components/searchInput";
 import { useSelector } from "react-redux";
 
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
   return (
     <div>
       <p>Home</p>
-      {currentUser && <p>Hi</p>}
+      <SearchInput />
     </div>
   );
 }

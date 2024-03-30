@@ -7,6 +7,7 @@ import { ModeToggle } from "../mode-toggle";
 import TopUserlinks from "./topUserLinks";
 import { useSelector } from "react-redux";
 import { Button } from "../ui/button";
+import { Fragment } from "react";
 
 export default function TopNavbar() {
   const currentUser = useSelector((state) => state.currentUser.currentUser);
@@ -20,11 +21,8 @@ export default function TopNavbar() {
         dark:text-white
         "
         >
-          Videofy
+          Job<span className="text-red-500">Seekers</span>
         </label>
-      </div>
-      <div className="md:w-[400px] w-[60%]">
-        <Input type="text" placeholder="Search here..." />
       </div>
       <div className="hidden md:flex px-4 space-x-4 items-center justify-between h-full text-primary dark:bg-[#1E1F22] bg-white">
         <button className="group px-2 py-2 rounded-md flex items-center gap-x-2 w-full hover:bg-zinc-700/10 dark:hover:bg-zinc-700/50 transition mb-1">

@@ -17,10 +17,10 @@ function SideNavbar(props) {
         <div className="md:hidden mt-4 gap-y-4 px-2 flex flex-col items-center justify-between h-full text-primary dark:bg-[#1E1F22] bg-white">
           <div className="w-full">
             <div className="flex items-center justify-between ">
-              <label className="font-semibold text-xl text-dark dark:text-white">
-                Videofy
+              <label className="font-semibold text-md text-dark dark:text-white">
+                Job<span className="text-red-500">Seekers</span>
               </label>
-              <ModeToggle className="w-2 h-2" />
+              <ModeToggle />
             </div>
             <Separator className="mt-2 bg-zinc-500 dark:bg-zinc-700" />
           </div>
