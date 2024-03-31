@@ -9,7 +9,9 @@ export default function Home() {
   return (
     <div>
       <p>Home</p>
-      <SearchInput />
+      <div className="bg-red-500 p-4">
+        <SearchInput />
+      </div>
     </div>
   );
 }

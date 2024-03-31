@@ -19,12 +19,10 @@ import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 
-import { exp } from "@/lib/utils";
-
 const formSchema = z.object({
   title: z.string().min(3, "Min. 3 alphates are required"),
   city: z.string().min(3, "Min. 3 alphates are required"),
-  exp: z.number(),
+  exp: z.coerce.number(),
 });
 
 export default function SearchInput() {
@@ -33,7 +31,7 @@ export default function SearchInput() {
     defaultValues: {
       title: "",
       city: "",
-      exp: 0,
+      exp: "",
     },
   });
 
@@ -45,13 +43,13 @@ export default function SearchInput() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-        <div className="flex space-y-8 px-6">
+      <form onSubmit={form.handleSubmit(onSubmit)}>
+        <div className="flex md:flex-row w-full flex-col items-center justify-center gap-2">
           <FormField
             control={form.control}
             name="title"
             render={({ field }) => (
-              <FormItem>
+              <FormItem className="w-full">
                 <FormControl>
                   <Input
                     disabled={isLoading}
@@ -68,7 +66,7 @@ export default function SearchInput() {
             control={form.control}
             name="city"
             render={({ field }) => (
-              <FormItem>
+              <FormItem className="w-full">
                 <FormControl>
                   <Input
                     disabled={isLoading}
@@ -85,56 +83,25 @@ export default function SearchInput() {
             control={form.control}
             name="exp"
             render={({ field }) => (
-              <FormItem>
-                <Select
-                  onValueChange={field.onChange}
-                  defaultValue={field.value}
-                >
-                  <FormControl>
-                    <SelectTrigger>
-                      <SelectValue placeholder="Select a verified email to display" />
-                    </SelectTrigger>
-                  </FormControl>
-                  <SelectContent>
-                    <SelectItem value="0">
-                      Freshers{" "}
-                      <span className="font-sm text-gray-400 dark:text-gray-500">
-                        (less than 1 years)
-                      </span>
-                    </SelectItem>
-                    {exp.map((e) => {
-                      return (
-                        <SelectItem key={e} value={e}>
-                          {e} Years
-                        </SelectItem>
-                      );
-                    })}
-                  </SelectContent>
-                </Select>
+              <FormItem className="w-full">
+                <FormControl>
+                  <Input
+                    type="number"
+                    min={0}
+                    max={30}
+                    disabled={isLoading}
+                    className="dark:border dark:text-white border-0 focus-visible:ring-0 text-black focus-visible:ring-offset-0"
+                    placeholder="Enter Experience"
+                    {...field}
+                  />
+                </FormControl>
                 <FormMessage />
               </FormItem>
             )}
           />
+          <Button>Search</Button>
         </div>
       </form>
     </Form>
   );
 }
-
-/*
-  <SelectContent>
-                      <SelectItem value="0">
-                        Freshers{" "}
-                        <span className="font-sm text-gray-400 dark:text-gray-500">
-                          (less than 1 years)
-                        </span>
-                      </SelectItem>
-                      {exp.map((e) => {
-                        return (
-                          <SelectItem key={e} value={e}>
-                            {e} Years
-                          </SelectItem>
-                        );
-                      })}
-                    </SelectContent>
-*/
