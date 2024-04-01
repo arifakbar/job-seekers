@@ -44,7 +44,7 @@ export default function SearchInput() {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)}>
-        <div className="flex md:flex-row w-full flex-col items-center justify-center gap-2">
+        <div className="flex w-full flex-col md:flex-row justify-center gap-2">
           <FormField
             control={form.control}
             name="title"
@@ -53,8 +53,8 @@ export default function SearchInput() {
                 <FormControl>
                   <Input
                     disabled={isLoading}
-                    className="dark:border dark:text-white border-0 focus-visible:ring-0 text-black focus-visible:ring-offset-0"
-                    placeholder="Enter Job Title"
+                    className="py-6 dark:border bg-[#E3E5E8] dark:bg-[#313338] shadow-md dark:text-white border-0 focus-visible:ring-0 text-black focus-visible:ring-offset-0"
+                    placeholder="Job Title"
                     {...field}
                   />
                 </FormControl>
@@ -62,44 +62,50 @@ export default function SearchInput() {
               </FormItem>
             )}
           />
-          <FormField
-            control={form.control}
-            name="city"
-            render={({ field }) => (
-              <FormItem className="w-full">
-                <FormControl>
-                  <Input
-                    disabled={isLoading}
-                    className="dark:border dark:text-white border-0 focus-visible:ring-0 text-black focus-visible:ring-offset-0"
-                    placeholder="Enter City"
-                    {...field}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="exp"
-            render={({ field }) => (
-              <FormItem className="w-full">
-                <FormControl>
-                  <Input
-                    type="number"
-                    min={0}
-                    max={30}
-                    disabled={isLoading}
-                    className="dark:border dark:text-white border-0 focus-visible:ring-0 text-black focus-visible:ring-offset-0"
-                    placeholder="Enter Experience"
-                    {...field}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <Button>Search</Button>
+          <div className="w-full flex items-center justify-between gap-2">
+            <FormField
+              control={form.control}
+              name="city"
+              render={({ field }) => (
+                <FormItem className="w-full">
+                  <FormControl>
+                    <Input
+                      disabled={isLoading}
+                      className="py-6 shadow-md bg-[#E3E5E8] dark:bg-[#313338] dark:border dark:text-white border-0 focus-visible:ring-0 text-black focus-visible:ring-offset-0"
+                      placeholder="City"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="exp"
+              render={({ field }) => (
+                <FormItem className="w-full">
+                  <FormControl>
+                    <Input
+                      type="number"
+                      min={0}
+                      max={30}
+                      disabled={isLoading}
+                      className="py-6 shadow-md bg-[#E3E5E8] dark:bg-[#313338] dark:border dark:text-white border-0 focus-visible:ring-0 text-black focus-visible:ring-offset-0"
+                      placeholder="Total Experience"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          </div>
+          <div>
+            <Button variant="outline" className="shadow-md h-full">
+              Find Jobs
+            </Button>
+          </div>
         </div>
       </form>
     </Form>
