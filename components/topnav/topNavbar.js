@@ -8,6 +8,8 @@ import TopUserlinks from "./topUserLinks";
 import { useSelector } from "react-redux";
 import { Button } from "../ui/button";
 import { Fragment } from "react";
+import LoginModal from "../modal/loginModal";
+import Link from "next/link";
 
 export default function TopNavbar() {
   const currentUser = useSelector((state) => state.currentUser.currentUser);
@@ -25,16 +27,20 @@ export default function TopNavbar() {
         </label>
       </div>
       <div className="hidden md:flex px-4 space-x-4 items-center justify-between h-full text-primary dark:bg-[#1E1F22] bg-white">
-        <button className="group px-2 py-2 rounded-md flex items-center gap-x-2 w-full hover:bg-zinc-700/10 dark:hover:bg-zinc-700/50 transition mb-1">
-          <p className="line-clamp-1 font-semibold text-sm text-zinc-500 group-hover:text-zinc-600 dark:text-zinc-400 dark:group-hover:text-zinc-300 transition">
-            Jobs
-          </p>
-        </button>
-        <button className="group px-2 py-2 rounded-md flex items-center gap-x-2 w-full hover:bg-zinc-700/10 dark:hover:bg-zinc-700/50 transition mb-1">
-          <p className="line-clamp-1 font-semibold text-sm text-zinc-500 group-hover:text-zinc-600 dark:text-zinc-400 dark:group-hover:text-zinc-300 transition">
-            Companies
-          </p>
-        </button>
+        <Link href="/">
+          <button className="group px-2 py-2 rounded-md flex items-center gap-x-2 w-full hover:bg-zinc-700/10 dark:hover:bg-zinc-700/50 transition mb-1">
+            <p className="line-clamp-1 font-semibold text-sm text-zinc-500 group-hover:text-zinc-600 dark:text-zinc-400 dark:group-hover:text-zinc-300 transition">
+              Home
+            </p>
+          </button>
+        </Link>
+        <Link href="/companies">
+          <button className="group px-2 py-2 rounded-md flex items-center gap-x-2 w-full hover:bg-zinc-700/10 dark:hover:bg-zinc-700/50 transition mb-1">
+            <p className="line-clamp-1 font-semibold text-sm text-zinc-500 group-hover:text-zinc-600 dark:text-zinc-400 dark:group-hover:text-zinc-300 transition">
+              Companies
+            </p>
+          </button>
+        </Link>
         <div>
           <ModeToggle />
         </div>
@@ -51,7 +57,7 @@ export default function TopNavbar() {
             />
           </>
         ) : (
-          <Button>Login</Button>
+          <LoginModal />
         )}
       </div>
       <div className="flex md:hidden space-x-2 items-center justify-between h-full text-primary dark:bg-[#1E1F22] bg-white">
@@ -68,7 +74,7 @@ export default function TopNavbar() {
             />
           </>
         ) : (
-          <Button>Login</Button>
+          <LoginModal />
         )}
       </div>
     </div>

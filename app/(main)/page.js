@@ -1,5 +1,7 @@
 "use client";
 
+import BannerCard from "@/components/cards/bannerCard";
+import ContainerCard from "@/components/cards/containerCard";
 import SearchInput from "@/components/searchInput";
 import { useSelector } from "react-redux";
 
@@ -12,8 +14,20 @@ export default function Home() {
         <h4 className="font-bold text-2xl">Get your preferred jobs here</h4>
         <p className="font-semibold text-md">Over 1 Lakh+ Jobs to search</p>
       </div>
-      <div className="md:w-[60%] w-full bg-white dark:bg-black py-8 px-6 shadow-md rounded-md">
+      <ContainerCard>
         <SearchInput />
+      </ContainerCard>
+      <div className="flex items-center justify-center gap-4 md:w-[60%] w-full">
+        <BannerCard
+          para1="Create/Update your profile"
+          para2="Get better response from recruiters"
+          btnText="Update"
+        />
+        <BannerCard
+          para1="Post your Jobs"
+          para2="Connect with multiple candidates"
+          btnText="Post"
+        />
       </div>
     </div>
   );

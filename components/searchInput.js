@@ -1,11 +1,5 @@
 import { Input } from "./ui/input";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+
 import {
   Form,
   FormControl,
@@ -38,7 +32,7 @@ export default function SearchInput() {
   const isLoading = form.formState.isSubmitting;
 
   const onSubmit = (values) => {
-    console.log(values);
+    console.log(values); //Redirect to Jobs here, with query
   };
 
   return (
@@ -92,7 +86,7 @@ export default function SearchInput() {
                       max={30}
                       disabled={isLoading}
                       className="py-6 shadow-md bg-[#E3E5E8] dark:bg-[#313338] dark:border dark:text-white border-0 focus-visible:ring-0 text-black focus-visible:ring-offset-0"
-                      placeholder="Total Experience"
+                      placeholder="Total Experience (in years)"
                       {...field}
                     />
                   </FormControl>
@@ -102,7 +96,10 @@ export default function SearchInput() {
             />
           </div>
           <div>
-            <Button variant="outline" className="shadow-md h-full">
+            <Button
+              variant="outline"
+              className="shadow-md h-full dark:bg-[#1E1F22] dark:border-gray-500"
+            >
               Find Jobs
             </Button>
           </div>
