@@ -12,6 +12,7 @@ import { Button } from "./ui/button";
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+import { useRouter } from "next/navigation";
 
 const formSchema = z.object({
   title: z.string().min(3, "Min. 3 alphates are required"),
@@ -30,9 +31,12 @@ export default function SearchInput() {
   });
 
   const isLoading = form.formState.isSubmitting;
+  const router = useRouter();
 
   const onSubmit = (values) => {
-    console.log(values); //Redirect to Jobs here, with query
+    return router.push(
+      `/jobs?title=${values.title}&city=${values.city}&exp=${values.exp}`
+    );
   };
 
   return (

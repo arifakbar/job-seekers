@@ -17,7 +17,7 @@ export default function SignupModal() {
       <AlertDialogTrigger className="font-semibold text-black dark:text-white">
         Signup
       </AlertDialogTrigger>
-      <AlertDialogContent>
+      <AlertDialogContent className="md:w-[100%] w-[95%]">
         <AlertDialogHeader>
           <AlertDialogTitle className="flex flex-col gap-4">
             <h1 className="text-2xl font-semibold text-center ">

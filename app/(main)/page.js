@@ -17,7 +17,7 @@ export default function Home() {
       <ContainerCard>
         <SearchInput />
       </ContainerCard>
-      <div className="flex items-center justify-center gap-4 md:w-[60%] w-full">
+      <div className="flex md:flex-row flex-col items-center justify-center gap-4 md:w-[60%] w-full">
         <BannerCard
           para1="Create/Update your profile"
           para2="Get better response from recruiters"

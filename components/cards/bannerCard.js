@@ -11,7 +11,7 @@ export default function BannerCard({ para1, para2, btnText }) {
   const currentUser = useSelector((state) => state.currentUser.currentUser);
 
   return (
-    <div className="flex flex-col items-center justify-center gap-2 shadow-md p-4 rounded-md w-[49%] md:w-[35%] bg-white dark:bg-[#1E1F22] h-[180px]">
+    <div className="flex flex-col items-center justify-center gap-2 shadow-md p-4 rounded-md w-[90%] md:w-[35%] bg-white dark:bg-[#1E1F22] h-[180px]">
       <p className="font-semibold text-md text-gray-500 dark:text-gray-400">
         {para1}
       </p>
