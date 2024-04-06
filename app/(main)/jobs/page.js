@@ -6,6 +6,7 @@ import SearchInput from "@/components/searchInput";
 import { Separator } from "@/components/ui/separator";
 import { X } from "lucide-react";
 import { useSearchParams } from "next/navigation";
+import { useSelector } from "react-redux";
 
 export default function Jobs() {
   const searchParams = useSearchParams();
@@ -13,7 +14,12 @@ export default function Jobs() {
   const city = searchParams.get("city");
   const exp = searchParams.get("exp");
 
-  const filters = ["remote", "freshers", "Pune,Bhopal", "> 10 Lacs"];
+  const filters = useSelector((state) => state.appliedFilters.filters);
+
+  const removeFromFilter = (type, index) => {
+    console.log(type);
+    console.log(filters[index]);
+  };
 
   return (
     <div className="p-4 flex flex-col gap-6">
@@ -27,9 +33,9 @@ export default function Jobs() {
         </ContainerCard>
       </div>
       <div className="w-full flex items-center justify-center">
-        <div className="w-full md:w-[60%] flex justify-between ">
-          <div className="flex gap-2 items-start md:flex-row flex-col">
-            <p className="text-md font-semibold text-gray-500 dark:text-gray-400">
+        <div className="w-full md:w-[60%] flex  md:flex-row flex-col justify-between gap-y-2">
+          <div className="w-full flex-wrap flex gap-2 items-start">
+            <p className="text-md  font-semibold text-gray-500 dark:text-gray-400">
               Filters :
             </p>
             {filters.length < 1 ? (
@@ -38,20 +44,21 @@ export default function Jobs() {
               </p>
             ) : (
               filters.map((f, i) => {
-                return (
+                return Object.values(f) != "" ? (
                   <div
                     key={i}
-                    className="rounded-3xl px-2 py-1 flex  items-center gap-4 shadow-md dark:bg-[#1E1F22] bg-white"
+                    className="rounded-3xl px-2 py-1 flex items-center gap-4 shadow-md dark:bg-[#1E1F22] bg-white"
                   >
                     <p className="text-sm text-gray-500 dark:text-gray-500">
-                      {f}
+                      {Object.values(f)}
                     </p>
                     <X
+                      onClick={() => removeFromFilter(Object.keys(f), i)}
                       size={14}
                       className="text-gray-500 dark:text-gray-400 cursor-pointer hover:text-red-400 dark:hover:text-red-400 transition "
                     />
                   </div>
-                );
+                ) : null;
               })
             )}
           </div>
