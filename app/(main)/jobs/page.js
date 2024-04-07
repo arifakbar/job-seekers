@@ -4,9 +4,10 @@ import ContainerCard from "@/components/cards/containerCard";
 import Filters from "@/components/filter-drawer";
 import SearchInput from "@/components/searchInput";
 import { Separator } from "@/components/ui/separator";
+import { removeFilters } from "@/lib/redux/actions";
 import { X } from "lucide-react";
 import { useSearchParams } from "next/navigation";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 
 export default function Jobs() {
   const searchParams = useSearchParams();
@@ -15,10 +16,12 @@ export default function Jobs() {
   const exp = searchParams.get("exp");
 
   const filters = useSelector((state) => state.appliedFilters.filters);
+  const dispatch = useDispatch();
+  console.log(filters);
 
-  const removeFromFilter = (type, index) => {
-    console.log(type);
-    console.log(filters[index]);
+  const removeFromFilter = (key, index) => {
+    console.log(filters[index], key[0]);
+    // dispatch(removeFilters(key, index));
   };
 
   return (
