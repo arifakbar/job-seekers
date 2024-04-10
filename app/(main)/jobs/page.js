@@ -20,8 +20,7 @@ export default function Jobs() {
   console.log(filters);
 
   const removeFromFilter = (key, index) => {
-    console.log(filters[index], key[0]);
-    // dispatch(removeFilters(key, index));
+    dispatch(removeFilters({ key, index }));
   };
 
   return (
