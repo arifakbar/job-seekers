@@ -9,6 +9,7 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { Button } from "./ui/button";
+import { useDispatch, useSelector } from "react-redux";
 
 import {
   salary,
@@ -18,9 +19,8 @@ import {
   industry,
   companies,
 } from "@/lib/utils";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SelectMap from "./selectMap";
-import { useDispatch } from "react-redux";
 import { applyFilters } from "@/lib/redux/actions";
 
 export default function Filters() {
@@ -30,6 +30,20 @@ export default function Filters() {
   const [preferredWorkingType, setPreferredWorkingType] = useState("");
   const [preferredIndustry, setPreferredIndustry] = useState("");
   const [preferredCompanies, setPreferredCompanies] = useState("");
+
+  const initial_filters = useSelector((state) => state.appliedFilters.filters);
+  useEffect(() => {
+    if (initial_filters.length > 0) {
+      const { salary, jobTypes, workingType, timePosted, industry, companies } =
+        initial_filters[0];
+      setPreferredSalary(salary || "");
+      setPreferredJobTypes(jobTypes || "");
+      setPreferredTimePosted(timePosted || "");
+      setPreferredWorkingType(workingType || "");
+      setPreferredIndustry(industry || "");
+      setPreferredCompanies(companies || "");
+    }
+  }, [initial_filters]);
 
   const dispatch = useDispatch();
 
