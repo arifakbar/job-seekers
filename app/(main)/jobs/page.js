@@ -1,6 +1,7 @@
 "use client";
 
 import ContainerCard from "@/components/cards/containerCard";
+import JobCards from "@/components/cards/jobsCards";
 import Filters from "@/components/filter-drawer";
 import SearchInput from "@/components/searchInput";
 import { Separator } from "@/components/ui/separator";
@@ -67,7 +68,14 @@ export default function Jobs() {
           <Filters />
         </div>
       </div>
-      <Separator className="bg-gray-500 dark:bg-gray-500 h-[1px]" />
+      <Separator className="bg-gray-500 dark:bg-gray-500 h-[1px] " />
+      <div className="flex flex-wrap gap-4 xl:justify-start justify-center">
+        <JobCards />
+        <JobCards />
+        <JobCards />
+        <JobCards />
+        <JobCards />
+      </div>
     </div>
   );
 }
