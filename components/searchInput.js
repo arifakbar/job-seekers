@@ -90,7 +90,7 @@ export default function SearchInput() {
                       max={30}
                       disabled={isLoading}
                       className="py-6 shadow-md bg-[#E3E5E8] dark:bg-[#313338] dark:border dark:text-white border-0 focus-visible:ring-0 text-black focus-visible:ring-offset-0"
-                      placeholder="Total Experience (in years)"
+                      placeholder="Total Exp. (in years)"
                       {...field}
                     />
                   </FormControl>

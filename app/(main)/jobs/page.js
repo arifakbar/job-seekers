@@ -38,11 +38,11 @@ export default function Jobs() {
       <div className="w-full flex items-center justify-center">
         <div className="w-full md:w-[60%] flex  md:flex-row flex-col justify-between gap-y-2">
           <div className="w-full flex-wrap flex gap-2 items-start">
-            <p className="text-md  font-semibold text-gray-500 dark:text-gray-400">
+            <p className="text-md  font-semibold text-gray-400 dark:text-gray-400">
               Filters :
             </p>
             {filters.length < 1 ? (
-              <p className="text-sm text-gray-500 dark:text-gray-400 mt-[2px]">
+              <p className="text-sm text-gray-400 dark:text-gray-400 mt-[2px]">
                 None
               </p>
             ) : (
@@ -52,13 +52,13 @@ export default function Jobs() {
                     key={i}
                     className="rounded-3xl px-2 py-1 flex items-center gap-4 shadow-md dark:bg-[#1E1F22] bg-white"
                   >
-                    <p className="text-sm text-gray-500 dark:text-gray-500">
+                    <p className="text-sm text-gray-400 dark:text-gray-500">
                       {Object.values(f)}
                     </p>
                     <X
                       onClick={() => removeFromFilter(Object.keys(f), i)}
                       size={14}
-                      className="text-gray-500 dark:text-gray-400 cursor-pointer hover:text-red-400 dark:hover:text-red-400 transition "
+                      className="text-gray-400 dark:text-gray-500 cursor-pointer hover:text-red-400 dark:hover:text-red-400 transition "
                     />
                   </div>
                 ) : null;
@@ -68,7 +68,7 @@ export default function Jobs() {
           <Filters />
         </div>
       </div>
-      <Separator className="bg-gray-500 dark:bg-gray-500 h-[1px] " />
+      <Separator className="bg-gray-400 dark:bg-gray-500 h-[1px] " />
       <div className="flex flex-wrap gap-4 xl:justify-start justify-center">
         <JobCards />
         <JobCards />

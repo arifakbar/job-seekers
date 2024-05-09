@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Badge } from "../ui/badge";
 
 export default function JobCards() {
@@ -5,7 +6,10 @@ export default function JobCards() {
     "Deployment to Dockers,Kubernetes based environments on AWS or Azure 1-5y nodejs exp,2-5y backend development experience";
 
   return (
-    <div className="overflow-hidden h-[300px] xl:w-[24%] md:w-[48%] w-[100%] p-6  flex flex-col gap-3 items-start bg-white dark:bg-[#091921] shadow-md rounded-md cursor-pointer">
+    <Link
+      href={`/jobs/${123}`}
+      className="overflow-hidden h-[300px] xl:w-[24%] md:w-[48%] w-[100%] p-6  flex flex-col gap-3 items-start bg-white dark:bg-[#091921] shadow-md rounded-md cursor-pointer"
+    >
       <h1 className="text-xl font-semibold text-gray-500 dark:text-gray-400">
         Job Title...
       </h1>
@@ -51,6 +55,6 @@ export default function JobCards() {
           Skill 6
         </Badge>
       </div>
-    </div>
+    </Link>
   );
 }
