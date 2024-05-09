@@ -66,6 +66,21 @@ export default function Job(props) {
             maximizing their velocity and scalability.
           </p>
         </div>
+        <Separator className="bg-gray-500 dark:bg-gray-400" />
+        <div className="flex flex-col gap-2">
+          <h1>About Company</h1>
+          <p>
+            Steady Rabbit is a leading - Product Engineering and DevOps service
+            organization with offices in India, US and Italy. Our Motto - Expect
+            more from us. We are more then a technical partner; we are your
+            business partner.
+          </p>
+          <p>
+            <b>Address:</b> 61 A,GF,NEHRU COOPERATIVE HOUSING SOCIETY,AMBEDKAR ,
+            GHAZIABAD, Uttar Pradesh, India
+          </p>
+          <p>Contact: email@address.com/phone no.</p>
+        </div>
       </div>
     </div>
   );
