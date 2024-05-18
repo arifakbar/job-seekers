@@ -1,5 +1,4 @@
 import { Input } from "../ui/input";
-
 import {
   Form,
   FormControl,
@@ -30,7 +29,7 @@ export default function LoginForm() {
 
   const isLoading = form.formState.isSubmitting;
 
-  const onSubmit = (values) => {
+  const onSubmit = async (values) => {
     console.log(values);
   };
 

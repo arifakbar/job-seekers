@@ -88,9 +88,6 @@ export default function Job(props) {
             </h1>
             <div className="flex flex-col gap-1">
               <p className="text-sm text-gray-500 dark:text-gray-400">
-                Experience : 3-5 years
-              </p>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
                 Notice Period : Immediately
               </p>
               <p className="text-sm text-gray-500 dark:text-gray-400">

@@ -1,0 +1,508 @@
+[
+  {
+    "id": "1",
+    "name": "Software Engineer",
+    "companyName": "Tech Innovators Inc.",
+    "minExperience": 3,
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "ratings": 4.5,
+    "location": "New York",
+    "jobType": "Hybrid",
+    "postedOn": "2024-05-18",
+    "totalApplicants": 150,
+    "totalOpenings": 5,
+    "shortDescription": "Exciting opportunity to work with a dynamic team on cutting-edge technology projects.",
+    "rolesAndResponsibilities": [
+      "Develop and maintain web applications using modern frameworks.",
+      "Collaborate with cross-functional teams to define, design, and ship new features.",
+      "Write clean, maintainable code and conduct code reviews."
+    ],
+    "requirements": {
+      "noticePeriod": "1 month",
+      "graduation": "Bachelor's degree in Computer Science or related field",
+      "certifications": [
+        "AWS Certified Developer",
+        "Microsoft Certified: Azure Developer Associate"
+      ],
+      "skills": ["JavaScript", "React.js", "Node.js", "Azure", "CI/CD"]
+    }
+  },
+  {
+    "id": "2",
+    "name": "Frontend Developer",
+    "companyName": "Creative Solutions Ltd.",
+    "minExperience": 2,
+    "salaryRange": {
+      "min": 60000,
+      "max": 90000
+    },
+    "ratings": 4.2,
+    "location": "San Francisco",
+    "jobType": "Remote",
+    "postedOn": "2024-05-10",
+    "totalApplicants": 200,
+    "totalOpenings": 3,
+    "shortDescription": "Join our team to build engaging and responsive web interfaces.",
+    "rolesAndResponsibilities": [
+      "Develop user-friendly web pages using HTML, CSS, and JavaScript.",
+      "Ensure the technical feasibility of UI/UX designs.",
+      "Optimize applications for maximum speed and scalability."
+    ],
+    "requirements": {
+      "noticePeriod": "Immediate",
+      "graduation": "Bachelor's degree in Computer Science or related field",
+      "certifications": ["Certified Web Developer"],
+      "skills": ["HTML", "CSS", "JavaScript", "React.js"]
+    }
+  },
+  {
+    "id": "3",
+    "name": "Data Scientist",
+    "companyName": "Data Insights Corp.",
+    "minExperience": 4,
+    "salaryRange": {
+      "min": 100000,
+      "max": 150000
+    },
+    "ratings": 4.8,
+    "location": "Boston",
+    "jobType": "On-site",
+    "postedOn": "2024-05-15",
+    "totalApplicants": 120,
+    "totalOpenings": 2,
+    "shortDescription": "Analyze complex datasets to provide actionable insights.",
+    "rolesAndResponsibilities": [
+      "Collect and analyze large datasets.",
+      "Develop predictive models and machine learning algorithms.",
+      "Communicate findings to stakeholders."
+    ],
+    "requirements": {
+      "noticePeriod": "2 months",
+      "graduation": "Master's degree in Data Science or related field",
+      "certifications": ["Certified Data Scientist"],
+      "skills": ["Python", "R", "SQL", "Machine Learning"]
+    }
+  },
+  {
+    "id": "4",
+    "name": "Project Manager",
+    "companyName": "Global Tech Innovators",
+    "minExperience": 5,
+    "salaryRange": {
+      "min": 90000,
+      "max": 130000
+    },
+    "ratings": 4.0,
+    "location": "Chicago",
+    "jobType": "Hybrid",
+    "postedOn": "2024-05-01",
+    "totalApplicants": 80,
+    "totalOpenings": 1,
+    "shortDescription": "Lead cross-functional teams to deliver projects on time and within budget.",
+    "rolesAndResponsibilities": [
+      "Plan and oversee projects from inception to completion.",
+      "Manage project timelines and budgets.",
+      "Coordinate with stakeholders to ensure project success."
+    ],
+    "requirements": {
+      "noticePeriod": "1 month",
+      "graduation": "Bachelor's degree in Business Administration or related field",
+      "certifications": ["PMP Certification"],
+      "skills": ["Project Management", "Agile", "Scrum", "JIRA"]
+    }
+  },
+  {
+    "id": "5",
+    "name": "Backend Developer",
+    "companyName": "Innovative Tech Solutions",
+    "minExperience": 3,
+    "salaryRange": {
+      "min": 70000,
+      "max": 110000
+    },
+    "ratings": 4.3,
+    "location": "Seattle",
+    "jobType": "On-site",
+    "postedOn": "2024-04-28",
+    "totalApplicants": 140,
+    "totalOpenings": 4,
+    "shortDescription": "Develop robust backend systems and APIs.",
+    "rolesAndResponsibilities": [
+      "Design and implement server-side logic.",
+      "Create and maintain APIs for frontend integration.",
+      "Ensure high performance and responsiveness of applications."
+    ],
+    "requirements": {
+      "noticePeriod": "1 month",
+      "graduation": "Bachelor's degree in Computer Science or related field",
+      "certifications": ["Certified Java Developer"],
+      "skills": ["Java", "Spring Boot", "REST APIs", "SQL"]
+    }
+  },
+  {
+    "id": "6",
+    "name": "UX Designer",
+    "companyName": "Creative Minds Studio",
+    "minExperience": 2,
+    "salaryRange": {
+      "min": 50000,
+      "max": 80000
+    },
+    "ratings": 4.6,
+    "location": "Austin",
+    "jobType": "Remote",
+    "postedOn": "2024-05-12",
+    "totalApplicants": 110,
+    "totalOpenings": 2,
+    "shortDescription": "Design user-centric interfaces and enhance user experience.",
+    "rolesAndResponsibilities": [
+      "Conduct user research and create user personas.",
+      "Design wireframes, prototypes, and mockups.",
+      "Collaborate with developers to implement designs."
+    ],
+    "requirements": {
+      "noticePeriod": "Immediate",
+      "graduation": "Bachelor's degree in Design or related field",
+      "certifications": ["UX Design Certification"],
+      "skills": ["Sketch", "Figma", "Adobe XD", "User Research"]
+    }
+  },
+  {
+    "id": "7",
+    "name": "Marketing Specialist",
+    "companyName": "Market Leaders Inc.",
+    "minExperience": 3,
+    "salaryRange": {
+      "min": 60000,
+      "max": 90000
+    },
+    "ratings": 4.1,
+    "location": "Miami",
+    "jobType": "Hybrid",
+    "postedOn": "2024-05-05",
+    "totalApplicants": 90,
+    "totalOpenings": 1,
+    "shortDescription": "Develop and execute marketing strategies to drive growth.",
+    "rolesAndResponsibilities": [
+      "Plan and manage marketing campaigns.",
+      "Analyze market trends and customer behavior.",
+      "Collaborate with sales teams to achieve business goals."
+    ],
+    "requirements": {
+      "noticePeriod": "1 month",
+      "graduation": "Bachelor's degree in Marketing or related field",
+      "certifications": ["Google Analytics Certified"],
+      "skills": [
+        "SEO",
+        "Content Marketing",
+        "Google Analytics",
+        "Social Media Marketing"
+      ]
+    }
+  },
+  {
+    "id": "8",
+    "name": "DevOps Engineer",
+    "companyName": "Tech Operations Ltd.",
+    "minExperience": 4,
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "ratings": 4.7,
+    "location": "Denver",
+    "jobType": "On-site",
+    "postedOn": "2024-04-30",
+    "totalApplicants": 60,
+    "totalOpenings": 3,
+    "shortDescription": "Automate and streamline operations and processes.",
+    "rolesAndResponsibilities": [
+      "Develop and maintain CI/CD pipelines.",
+      "Monitor and manage cloud infrastructure.",
+      "Collaborate with development teams to improve system performance."
+    ],
+    "requirements": {
+      "noticePeriod": "1 month",
+      "graduation": "Bachelor's degree in Computer Science or related field",
+      "certifications": ["AWS Certified DevOps Engineer"],
+      "skills": ["CI/CD", "AWS", "Docker", "Kubernetes"]
+    }
+  },
+  {
+    "id": "9",
+    "name": "Product Manager",
+    "companyName": "Global Tech Solutions",
+    "minExperience": 5,
+    "salaryRange": {
+      "min": 100000,
+      "max": 150000
+    },
+    "ratings": 4.4,
+    "location": "San Diego",
+    "jobType": "Hybrid",
+    "postedOn": "2024-05-07",
+    "totalApplicants": 70,
+    "totalOpenings": 1,
+    "shortDescription": "Define and deliver product vision and strategy.",
+    "rolesAndResponsibilities": [
+      "Lead product development from concept to launch.",
+      "Conduct market research and identify customer needs.",
+      "Collaborate with cross-functional teams to deliver products."
+    ],
+    "requirements": {
+      "noticePeriod": "2 months",
+      "graduation": "Bachelor's degree in Business Administration or related field",
+      "certifications": ["Certified Scrum Product Owner"],
+      "skills": ["Product Management", "Agile", "Scrum", "Market Research"]
+    }
+  },
+  {
+    "id": "10",
+    "name": "QA Engineer",
+    "companyName": "Quality Tech Ltd.",
+    "minExperience": 2,
+    "salaryRange": {
+      "min": 55000,
+      "max": 85000
+    },
+    "ratings": 4.3,
+    "location": "Boston",
+    "jobType": "Remote",
+    "postedOn": "2024-05-03",
+    "totalApplicants": 100,
+    "totalOpenings": 2,
+    "shortDescription": "Ensure the quality and reliability of software products.",
+    "rolesAndResponsibilities": [
+      "Develop and execute test plans and test cases.",
+      "Identify and document software defects.",
+      "Collaborate with developers to resolve issues."
+    ],
+    "requirements": {
+      "noticePeriod": "Immediate",
+      "graduation": "Bachelor's degree in Computer Science or related field",
+      "certifications": ["ISTQB Certified Tester"],
+      "skills": ["Manual Testing", "Automated Testing", "Selenium", "JIRA"]
+    }
+  },
+  {
+    "id": "11",
+    "name": "Network Administrator",
+    "companyName": "Tech Networks Inc.",
+    "minExperience": 4,
+    "salaryRange": {
+      "min": 70000,
+      "max": 100000
+    },
+    "ratings": 4.5,
+    "location": "Atlanta",
+    "jobType": "On-site",
+    "postedOn": "2024-05-02",
+    "totalApplicants": 50,
+    "totalOpenings": 1,
+    "shortDescription": "Manage and maintain network infrastructure.",
+    "rolesAndResponsibilities": [
+      "Install, configure, and maintain network hardware and software.",
+      "Monitor network performance and troubleshoot issues.",
+      "Implement network security measures."
+    ],
+    "requirements": {
+      "noticePeriod": "1 month",
+      "graduation": "Bachelor's degree in Information Technology or related field",
+      "certifications": ["Cisco Certified Network Associate (CCNA)"],
+      "skills": [
+        "Network Administration",
+        "Cisco",
+        "Firewall Management",
+        "Network Security"
+      ]
+    }
+  },
+  {
+    "id": "12",
+    "name": "Business Analyst",
+    "companyName": "Innovative Business Solutions",
+    "minExperience": 3,
+    "salaryRange": {
+      "min": 60000,
+      "max": 90000
+    },
+    "ratings": 4.2,
+    "location": "New York",
+    "jobType": "Hybrid",
+    "postedOn": "2024-05-08",
+    "totalApplicants": 80,
+    "totalOpenings": 1,
+    "shortDescription": "Analyze business processes to improve efficiency and effectiveness.",
+    "rolesAndResponsibilities": [
+      "Gather and document business requirements.",
+      "Analyze data to identify trends and opportunities.",
+      "Collaborate with stakeholders to implement solutions."
+    ],
+    "requirements": {
+      "noticePeriod": "1 month",
+      "graduation": "Bachelor's degree in Business Administration or related field",
+      "certifications": ["Certified Business Analysis Professional (CBAP)"],
+      "skills": [
+        "Business Analysis",
+        "Data Analysis",
+        "SQL",
+        "Process Improvement"
+      ]
+    }
+  },
+  {
+    "id": "13",
+    "name": "Cloud Engineer",
+    "companyName": "Cloud Tech Services",
+    "minExperience": 3,
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "ratings": 4.6,
+    "location": "Seattle",
+    "jobType": "Remote",
+    "postedOn": "2024-05-04",
+    "totalApplicants": 90,
+    "totalOpenings": 3,
+    "shortDescription": "Design and manage cloud infrastructure solutions.",
+    "rolesAndResponsibilities": [
+      "Develop and implement cloud solutions.",
+      "Monitor and optimize cloud resources.",
+      "Ensure security and compliance of cloud infrastructure."
+    ],
+    "requirements": {
+      "noticePeriod": "2 months",
+      "graduation": "Bachelor's degree in Computer Science or related field",
+      "certifications": ["AWS Certified Solutions Architect"],
+      "skills": ["AWS", "Azure", "Cloud Security", "Terraform"]
+    }
+  },
+  {
+    "id": "14",
+    "name": "Cybersecurity Analyst",
+    "companyName": "SecureTech Inc.",
+    "minExperience": 4,
+    "salaryRange": {
+      "min": 90000,
+      "max": 130000
+    },
+    "ratings": 4.8,
+    "location": "San Francisco",
+    "jobType": "Hybrid",
+    "postedOn": "2024-04-25",
+    "totalApplicants": 50,
+    "totalOpenings": 2,
+    "shortDescription": "Protect company's information systems from cyber threats.",
+    "rolesAndResponsibilities": [
+      "Monitor and analyze network traffic for security threats.",
+      "Respond to security incidents and breaches.",
+      "Implement security policies and procedures."
+    ],
+    "requirements": {
+      "noticePeriod": "1 month",
+      "graduation": "Bachelor's degree in Cybersecurity or related field",
+      "certifications": [
+        "Certified Information Systems Security Professional (CISSP)"
+      ],
+      "skills": [
+        "Network Security",
+        "Incident Response",
+        "SIEM",
+        "Penetration Testing"
+      ]
+    }
+  },
+  {
+    "id": "15",
+    "name": "Mobile App Developer",
+    "companyName": "AppDev Solutions",
+    "minExperience": 2,
+    "salaryRange": {
+      "min": 65000,
+      "max": 95000
+    },
+    "ratings": 4.5,
+    "location": "Austin",
+    "jobType": "On-site",
+    "postedOn": "2024-05-06",
+    "totalApplicants": 130,
+    "totalOpenings": 3,
+    "shortDescription": "Develop and maintain mobile applications for Android and iOS platforms.",
+    "rolesAndResponsibilities": [
+      "Design and build mobile applications.",
+      "Collaborate with cross-functional teams to define app features.",
+      "Ensure performance and quality of applications."
+    ],
+    "requirements": {
+      "noticePeriod": "1 month",
+      "graduation": "Bachelor's degree in Computer Science or related field",
+      "certifications": ["Certified Mobile App Developer"],
+      "skills": ["Java", "Kotlin", "Swift", "React Native"]
+    }
+  },
+  {
+    "id": "16",
+    "name": "IT Support Specialist",
+    "companyName": "Tech Support Co.",
+    "minExperience": 1,
+    "salaryRange": {
+      "min": 45000,
+      "max": 70000
+    },
+    "ratings": 4.0,
+    "location": "Miami",
+    "jobType": "Remote",
+    "postedOn": "2024-04-20",
+    "totalApplicants": 150,
+    "totalOpenings": 4,
+    "shortDescription": "Provide technical support and assistance to end-users.",
+    "rolesAndResponsibilities": [
+      "Resolve technical issues for end-users.",
+      "Install and configure software and hardware.",
+      "Provide training and support to end-users."
+    ],
+    "requirements": {
+      "noticePeriod": "Immediate",
+      "graduation": "Associate's degree in Information Technology or related field",
+      "certifications": ["CompTIA A+ Certification"],
+      "skills": [
+        "Technical Support",
+        "Troubleshooting",
+        "Windows OS",
+        "Customer Service"
+      ]
+    }
+  },
+  {
+    "id": "17",
+    "name": "Salesforce Developer",
+    "companyName": "CRM Experts",
+    "minExperience": 3,
+    "salaryRange": {
+      "min": 80000,
+      "max": 120000
+    },
+    "ratings": 4.3,
+    "location": "New York",
+    "jobType": "Hybrid",
+    "postedOn": "2024-05-01",
+    "totalApplicants": 80,
+    "totalOpenings": 2,
+    "shortDescription": "Develop and maintain Salesforce applications and integrations.",
+    "rolesAndResponsibilities": [
+      "Design and implement Salesforce solutions.",
+      "Integrate Salesforce with other systems.",
+      "Maintain and enhance existing Salesforce applications."
+    ],
+    "requirements": {
+      "noticePeriod": "1 month",
+      "graduation": "Bachelor's degree in Computer Science or related field",
+      "certifications": ["Salesforce Certified Platform Developer I"],
+      "skills": ["Salesforce", "Apex", "Visualforce", "Lightning"]
+    }
+  }
+]
