@@ -3,10 +3,21 @@
 import BannerCard from "@/components/cards/bannerCard";
 import ContainerCard from "@/components/cards/containerCard";
 import SearchInput from "@/components/searchInput";
+import axios from "axios";
+import { useEffect } from "react";
 import { useSelector } from "react-redux";
 
 export default function Home() {
   const currentUser = useSelector((state) => state.currentUser.currentUser);
+
+  useEffect(() => {
+    load();
+  }, []);
+
+  // const load = async () => {
+  //   const res = await axios.get("/api/jobs");
+  //   console.log(res.data);
+  // };
 
   return (
     <div className="h-[calc(100vh-98px)] flex flex-col items-center justify-center gap-6 my-4">
