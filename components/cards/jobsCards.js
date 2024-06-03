@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Badge } from "../ui/badge";
 
-export default function JobCards() {
+export default function JobCards({ job }) {
   const shortDescription =
     "Deployment to Dockers,Kubernetes based environments on AWS or Azure 1-5y nodejs exp,2-5y backend development experience";
 
