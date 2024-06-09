@@ -13,7 +13,9 @@ export default function Home() {
   return (
     <div className="h-[calc(100vh-98px)] flex flex-col items-center justify-center gap-6 my-4">
       <div className="flex flex-col gap-4 items-center">
-        <h4 className="font-bold text-2xl">Get your preferred jobs here</h4>
+        <h4 className="font-bold text-2xl md:mt-0 mt-8">
+          Get your preferred jobs here
+        </h4>
         <p className="font-semibold text-md">Over 1 Lakh+ Jobs to search</p>
       </div>
       <ContainerCard>

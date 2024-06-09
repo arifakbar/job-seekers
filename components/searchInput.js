@@ -56,7 +56,7 @@ export default function SearchInput() {
                     {...field}
                   />
                 </FormControl>
-                <FormMessage />
+                <FormMessage className="md:absolute" />
               </FormItem>
             )}
           />
@@ -74,7 +74,7 @@ export default function SearchInput() {
                       {...field}
                     />
                   </FormControl>
-                  <FormMessage />
+                  <FormMessage className="md:absolute" />
                 </FormItem>
               )}
             />
@@ -94,7 +94,7 @@ export default function SearchInput() {
                       {...field}
                     />
                   </FormControl>
-                  <FormMessage />
+                  <FormMessage className="md:absolute" />
                 </FormItem>
               )}
             />
