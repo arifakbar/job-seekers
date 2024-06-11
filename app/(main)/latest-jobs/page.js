@@ -14,11 +14,7 @@ export default function LatestJobs() {
   const [selectedJob, setSelectedJob] = useState({});
   const [hasMore, setHasMore] = useState(true);
   const [offset, setOffset] = useState(0);
-  const limit = 3;
-
-  useEffect(() => {
-    load();
-  }, []);
+  const limit = 10;
 
   const load = async () => {
     try {
@@ -26,10 +22,11 @@ export default function LatestJobs() {
       const res = await axios.get(
         `/api/latest?limit=${limit}&offset=${offset}`
       );
-      // setJobs(res.data);
       setJobs((prevJobs) => [...prevJobs, ...res.data]);
       setSelectedJob(res.data[0]);
-      setHasMore(res.data.length === limit);
+      if (res.data.length < limit) {
+        setHasMore(false);
+      }
       setOffset((prevOffset) => prevOffset + limit);
       setLoading(false);
     } catch (err) {
@@ -37,6 +34,10 @@ export default function LatestJobs() {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    load();
+  }, []);
 
   const select = (index) => {
     setSelectedJob(jobs[index]);
@@ -79,6 +80,11 @@ export default function LatestJobs() {
             {jobs?.map((j, i) => {
               return <JobCards key={i} job={j} />;
             })}
+            {hasMore && !loading && (
+              <Button className="mt-2" variant="outline" onClick={loadMore}>
+                Load More
+              </Button>
+            )}
           </div>
           <div className="hidden md:block h-full xl:w-[70%] w-[60%] overflow-y-auto pr-4 pt-4">
             <JobInfo job={selectedJob} />

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Briefcase, IndianRupee, MapIcon, StarIcon } from "lucide-react";
+import { Fragment } from "react";
 
 export default function JobInfo({ job }) {
   const calcTimeDiff = (postedDate) => {
@@ -105,7 +106,9 @@ export default function JobInfo({ job }) {
               <p className="text-sm text-gray-500 dark:text-gray-400">
                 Certifications :{" "}
                 {job?.requirements?.certifications.map((c, i) => {
-                  return <>{(i > 0 ? ", " : " ") + c}</>;
+                  return (
+                    <Fragment key={i}>{(i > 0 ? ", " : " ") + c}</Fragment>
+                  );
                 })}
               </p>
             )}
